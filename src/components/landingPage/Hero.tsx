@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 import About from "./About";
 import BmiCalculator from "./BmiCalculator";
 import Crew from "./Crew";
+import Faq from "./Faq";
 import Pricing from "./Pricing";
 import Services from "./Services";
 
@@ -40,6 +41,7 @@ const Hero = () => {
       <Crew />
       <Pricing />
       <TempBlock className="h-[578px]" name="Testimonial section goes here!!" />
+      <Faq />
     </>
   );
 };
