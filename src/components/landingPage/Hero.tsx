@@ -1,9 +1,10 @@
-import React from "react";
+import TempBlock from "../shared/TempBlock";
 import { Button } from "../ui/button";
-import BmiCalculator from "./BmiCalculator";
 import About from "./About";
-import Services from "./Services";
+import BmiCalculator from "./BmiCalculator";
 import Crew from "./Crew";
+import Pricing from "./Pricing";
+import Services from "./Services";
 
 const Hero = () => {
   return (
@@ -37,6 +38,8 @@ const Hero = () => {
       <About />
       <Services />
       <Crew />
+      <Pricing />
+      <TempBlock className="h-[578px]" name="Testimonial section goes here!!" />
     </>
   );
 };
