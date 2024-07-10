@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import Navbar from "@/components/shared/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,8 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body className={cn("relative h-full antialiased", inter.className)}>
-        <main className="relative flex min-h-screen flex-col">
-          <div className="flex-1 flex-grow">{children}</div>
+        <main className="relative mx-4 flex min-h-screen max-w-5xl flex-col lg:mx-auto">
+          <div className="flex-1 flex-grow">
+            <Navbar />
+            {children}
+          </div>
         </main>
       </body>
     </html>
