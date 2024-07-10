@@ -53,7 +53,7 @@ const Services = () => {
               Experience the difference with our top-notch facilities,
               personalised training, and guaranteed results.
             </p>
-            <div className="mt-5 flex items-center justify-center gap-4">
+            <div className="mt-5 flex flex-wrap items-center justify-center gap-4 whitespace-nowrap">
               {SERVICEPILLS.map((pill, idx) => (
                 <div
                   className="rounded-full bg-primary/10 px-3.5 py-0.5"
@@ -64,7 +64,7 @@ const Services = () => {
               ))}
             </div>
           </div>
-          <div className="mt-3.5 grid grid-cols-3 gap-5">
+          <div className="mt-3.5 grid gap-5 sm:grid-cols-3">
             {SERVICES.map((service, idx) => (
               <div
                 className="space-y-1 rounded-lg border border-border p-5"
