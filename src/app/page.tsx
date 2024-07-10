@@ -1,7 +1,9 @@
+import Hero from "@/components/landingPage/Hero";
+
 export default function Home() {
   return (
     <>
-      <h1>CodeCleanUp</h1>
+      <Hero />
     </>
   );
 }

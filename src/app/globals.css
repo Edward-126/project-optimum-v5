@@ -59,7 +59,7 @@
 }
 
 h1 {
-  @apply scroll-m-20 text-5xl font-bold tracking-tight;
+  @apply scroll-m-20 text-5xl font-bold leading-[56px] tracking-tight;
 }
 
 h2 {
