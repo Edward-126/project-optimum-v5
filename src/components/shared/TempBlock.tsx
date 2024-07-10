@@ -11,7 +11,7 @@ const TempBlock = ({
     <>
       <div
         className={cn(
-          "group flex h-dvh items-center justify-center",
+          "group flex h-dvh items-center justify-center max-sm:pt-28",
           className,
         )}
       >
