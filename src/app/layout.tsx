@@ -32,7 +32,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body className={cn("relative h-full antialiased", inter.className)}>
+      <body
+        className={cn(
+          "relative h-full antialiased selection:bg-primary/40",
+          inter.className,
+        )}
+      >
         <main className="relative mx-4 flex min-h-screen max-w-5xl flex-col lg:mx-auto">
           <div className="flex-1 flex-grow">
             <Navbar />

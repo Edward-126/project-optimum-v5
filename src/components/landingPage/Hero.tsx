@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 import BmiCalculator from "./BmiCalculator";
 import About from "./About";
 import Services from "./Services";
+import Crew from "./Crew";
 
 const Hero = () => {
   return (
@@ -35,6 +36,7 @@ const Hero = () => {
       </div>
       <About />
       <Services />
+      <Crew />
     </>
   );
 };
