@@ -52,8 +52,12 @@ const BmiCalculator: React.FC = () => {
               <TooltipTrigger>
                 <span className="text-primary">*</span>
               </TooltipTrigger>
-              <TooltipContent side="right" className="ml-2">
-                <p>Add to library</p>
+              <TooltipContent side="right" className="ml-2 max-w-40">
+                <small>
+                  BMI calculations are general estimates and may not accurately
+                  reflect individual health conditions. Consult a healthcare
+                  professional for personalized advice.
+                </small>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
@@ -66,11 +70,21 @@ const BmiCalculator: React.FC = () => {
           </div>
           <div className="grid grid-cols-2 gap-2.5">
             <div className="space-y-1">
-              <Label>Height</Label>
+              <Label>
+                Height{" "}
+                <span className="font-normal text-muted-foreground/80">
+                  (cm)
+                </span>
+              </Label>
               <Input value={height} onChange={handleInputChange(setHeight)} />
             </div>
             <div className="space-y-1">
-              <Label>Weight</Label>
+              <Label>
+                Weight{" "}
+                <span className="font-normal text-muted-foreground/80">
+                  (kg)
+                </span>
+              </Label>
               <Input value={weight} onChange={handleInputChange(setWeight)} />
             </div>
           </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../ui/button";
 import BmiCalculator from "./BmiCalculator";
+import About from "./About";
 
 const Hero = () => {
   return (
@@ -31,6 +32,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <About />
     </>
   );
 };
