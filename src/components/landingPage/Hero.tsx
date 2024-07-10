@@ -5,8 +5,8 @@ import BmiCalculator from "./BmiCalculator";
 const Hero = () => {
   return (
     <>
-      <div className="relative max-sm:overflow-x-hidden sm:h-[687px]">
-        <div className="absolute -z-10 rounded-full bg-primary blur-[90px] filter sm:left-[60%] sm:top-[40%] sm:size-[200px]" />
+      <div className="relative sm:h-[687px]">
+        <div className="blob -z-10" />
         <div className="flex h-full items-center">
           <div className="grid h-full w-full gap-9 max-sm:mt-56 sm:grid-cols-12">
             <div className="flex flex-col justify-center gap-3 sm:col-span-7">
