@@ -3,7 +3,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <>
-      <div className="max-sm:pt-28 sm:my-8" id="about">
+      <div className="max-sm:pt-28 sm:py-8" id="about">
         <div className="flex flex-col gap-5 rounded-lg border border-border px-4 py-7 sm:flex-row sm:px-8 sm:py-9">
           <Image
             width={271.95}

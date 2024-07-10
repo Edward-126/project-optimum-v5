@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import BmiCalculator from "./BmiCalculator";
 import About from "./About";
+import Services from "./Services";
 
 const Hero = () => {
   return (
@@ -33,6 +34,7 @@ const Hero = () => {
         </div>
       </div>
       <About />
+      <Services />
     </>
   );
 };
