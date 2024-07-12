@@ -30,7 +30,7 @@ const MobileNav = () => {
             <SheetHeader className="h-full">
               <SheetTitle className="pb-5">
                 <Link href="/" onClick={() => setIsOpen(false)}>
-                  <Icons.logo className="h-16" />
+                  <Icons.logo className="h-16 fill-black dark:fill-white" />
                 </Link>
               </SheetTitle>
               <SheetDescription className="hidden"></SheetDescription>

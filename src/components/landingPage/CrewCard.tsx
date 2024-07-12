@@ -21,7 +21,7 @@ const CrewCard = ({
 }) => {
   return (
     <>
-      <div className="flex flex-col items-center gap-2 rounded-lg border border-border p-2.5 transition-all duration-300 ease-in-out hover:scale-[1.01] hover:border-primary/50 sm:p-4">
+      <div className="flex flex-col items-center gap-2 rounded-lg border border-border p-2.5 transition-all duration-300 ease-in-out hover:scale-[1.01] hover:border-primary/50 active:scale-100 sm:p-4">
         <div className="aspect-square size-full overflow-hidden rounded-lg">
           <Image
             width={205}

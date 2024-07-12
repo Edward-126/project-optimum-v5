@@ -6,6 +6,7 @@ import Crew from "./Crew";
 import Faq from "./Faq";
 import Pricing from "./Pricing";
 import Services from "./Services";
+import Testimonial from "./Testimonial";
 
 const Hero = () => {
   return (
@@ -40,7 +41,7 @@ const Hero = () => {
       <Services />
       <Crew />
       <Pricing />
-      <TempBlock className="h-[578px]" name="Testimonial section goes here!!" />
+      <Testimonial />
       <Faq />
     </>
   );

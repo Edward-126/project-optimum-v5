@@ -47,9 +47,9 @@ const Footer = () => {
       {FOOTERITEMS.map((footerItem, idx) => (
         <div className="mt-9 flex flex-col gap-2.5 overflow-hidden" key={idx}>
           <div className="grid w-full grid-cols-12 gap-10 border-t border-border pb-4 pt-9">
-            <div className="col-span-3">
-              <Link href="/">
-                <Icons.logo className="w-full sm:h-[60px] sm:w-fit" />
+            <div className="col-span-3 w-fit">
+              <Link href="/" className="w-fit">
+                <Icons.logo className="w-full fill-black dark:fill-white sm:h-[60px] sm:w-fit" />
               </Link>
             </div>
 

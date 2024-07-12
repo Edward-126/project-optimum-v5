@@ -11,9 +11,9 @@ const Navbar = () => {
   return (
     <>
       <div className="fixed top-0 z-50 my-5 w-full sm:max-w-5xl">
-        <div className="mr-8 flex items-center justify-between rounded-lg border border-border bg-background/80 px-3 py-2.5 shadow-sm backdrop-blur sm:mr-0">
+        <div className="group mr-8 flex items-center justify-between rounded-lg border border-border bg-background/80 px-3 py-2.5 shadow-sm backdrop-blur transition-all duration-300 ease-in-out hover:bg-background/90 active:border-primary/20 sm:mr-0">
           <Link href="/">
-            <Icons.subLogo className="h-8" />
+            <Icons.subLogo className="h-8 fill-black transition-all duration-300 ease-in-out group-hover:scale-[1.02] dark:fill-white" />
           </Link>
 
           <NavItems />
