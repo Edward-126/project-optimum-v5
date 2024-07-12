@@ -1,5 +1,6 @@
 import { Analytics } from "@vercel/analytics/react";
 
+import { ThemeProvider } from "@/components/shared/ThemeProvider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -41,13 +42,15 @@ export default function RootLayout({
           inter.className,
         )}
       >
-        <main className="relative mx-4 flex min-h-screen max-w-5xl flex-col lg:mx-auto">
-          <div className="flex-1 flex-grow">
-            <Navbar />
-            {children}
-            <Footer />
-          </div>
-        </main>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <main className="relative mx-4 flex min-h-screen max-w-5xl flex-col lg:mx-auto">
+            <div className="flex-1 flex-grow">
+              <Navbar />
+              {children}
+              <Footer />
+            </div>
+          </main>
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>
