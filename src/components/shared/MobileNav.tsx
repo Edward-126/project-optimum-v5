@@ -29,7 +29,9 @@ const MobileNav = () => {
           <SheetContent className="h-full">
             <SheetHeader className="h-full">
               <SheetTitle className="pb-5">
-                <Icons.logo className="h-16 fill-primary" />
+                <Link href="/" onClick={() => setIsOpen(false)}>
+                  <Icons.logo className="h-16" />
+                </Link>
               </SheetTitle>
               <SheetDescription className="hidden"></SheetDescription>
               <div className="flex h-full flex-col justify-between">
