@@ -43,7 +43,7 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <main className="relative mx-4 flex min-h-screen max-w-5xl flex-col lg:mx-auto">
+          <main className="relative mx-4 flex min-h-screen max-w-6xl flex-col lg:mx-auto">
             <div className="flex-1 flex-grow">
               <Navbar />
               {children}
