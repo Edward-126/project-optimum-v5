@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const CONTACTINFO = [
   {
@@ -72,6 +73,9 @@ const page = () => {
                   <div className="space-y-1">
                     <Label>Message</Label>
                     <Textarea className="min-h-[140px]" />
+                  </div>
+                  <div className="pt-2">
+                    <Button>Submit</Button>
                   </div>
                 </div>
                 {CONTACTINFO.map((contactItem, idx) => (
