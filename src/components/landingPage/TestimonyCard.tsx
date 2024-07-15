@@ -34,7 +34,7 @@ const TestimonyCard = ({
           )}
           <div className="flex w-fit flex-col gap-1">
             <small className="font-medium">{name}</small>
-            <span className="text-[12px] leading-[100%] text-neutral-950/45">
+            <span className="text-[12px] leading-[100%] text-black/45 dark:text-white/45">
               {occupation}
             </span>
           </div>
