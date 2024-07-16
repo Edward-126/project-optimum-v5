@@ -47,13 +47,19 @@ const Footer = () => {
       {FOOTERITEMS.map((footerItem, idx) => (
         <div className="mt-9 flex flex-col gap-2.5 overflow-hidden" key={idx}>
           <div className="grid w-full grid-cols-12 gap-10 border-t border-border pb-4 pt-9">
-            <div className="col-span-3 w-fit">
+            <div className="col-span-3 hidden w-fit sm:flex">
               <Link href="/" className="w-fit">
                 <Icons.logo className="w-full fill-black dark:fill-white sm:h-[60px] sm:w-fit" />
               </Link>
             </div>
 
-            <div className="col-span-4 flex flex-col gap-y-2.5 sm:col-span-3 sm:gap-y-4">
+            <div className="col-span-12 flex w-full max-w-[91vw] items-center justify-center sm:col-span-3 sm:hidden">
+              <Link href="/" className="w-fit">
+                <Icons.logo className="h-20 w-full fill-black dark:fill-white sm:h-[60px] sm:w-fit" />
+              </Link>
+            </div>
+
+            <div className="col-span-12 flex flex-col gap-y-2.5 sm:col-span-3 sm:gap-y-4">
               <small className="mb-2.5 font-semibold">Sections</small>
               {footerItem.sections.map((section, idx) => (
                 <Link
@@ -69,7 +75,7 @@ const Footer = () => {
               ))}
             </div>
 
-            <div className="col-span-4 flex flex-col gap-y-2.5 sm:col-span-3 sm:gap-y-4">
+            <div className="col-span-12 flex flex-col gap-y-2.5 sm:col-span-3 sm:gap-y-4">
               <small className="mb-2.5 font-semibold">Socials</small>
               {footerItem.socials.map((socials, idx) => (
                 <Link
@@ -84,7 +90,7 @@ const Footer = () => {
                 </Link>
               ))}
             </div>
-            <div className="col-span-4 flex flex-col gap-y-2.5 max-sm:col-start-4 sm:col-span-3 sm:gap-y-4">
+            <div className="col-span-12 flex flex-col gap-y-2.5 sm:col-span-3 sm:gap-y-4">
               <small className="mb-2.5 font-semibold">Support</small>
               {footerItem.support.map((support, idx) => (
                 <Link
