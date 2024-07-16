@@ -91,7 +91,7 @@ const Pricing = () => {
                         <p className="leading-6">{priceInfo.description}</p>
                         <div className="mt-1.5">
                           <Button className="w-fit" asChild>
-                            <Link href="/contact">Contact Us</Link>
+                            <Link href="tel:94773933114">Contact Us</Link>
                           </Button>
                         </div>
                       </div>
@@ -131,7 +131,7 @@ const Pricing = () => {
                         <p className="leading-6">{priceInfo.description}</p>
                         <div className="mt-1.5">
                           <Button className="w-fit" asChild>
-                            <Link href="/contact">Contact Us</Link>
+                            <Link href="tel:94773933114">Contact Us</Link>
                           </Button>
                         </div>
                       </div>
