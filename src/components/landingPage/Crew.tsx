@@ -19,7 +19,7 @@ const CREW = [
   },
   {
     name: "Thisara Bhashana",
-    title: "Fitness & Physical Trainer",
+    title: "Physical Fitness Trainer",
     imgSrc: "/assets/crew/Bhashana Aiya.jpeg",
     whatsapp: "94772618808",
     facebook: "",
@@ -27,7 +27,7 @@ const CREW = [
   },
   {
     name: "Chathura Kalinga",
-    title: "Fitness & Physical Trainer",
+    title: "Physical Fitness Trainer",
     imgSrc: "/assets/crew/Kalinga Aiya.jpeg",
     whatsapp: "94750300381",
     facebook: "",
