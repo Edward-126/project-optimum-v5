@@ -1,13 +1,17 @@
-import { LuMail } from "react-icons/lu";
-import { FiPhone } from "react-icons/fi";
-import { AiOutlineWhatsApp } from "react-icons/ai";
-import { FiFacebook } from "react-icons/fi";
-import { SiInstagram } from "react-icons/si";
+"use client";
+
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import emailjs from "@emailjs/browser";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import { AiOutlineWhatsApp } from "react-icons/ai";
+import { FiFacebook, FiPhone } from "react-icons/fi";
+import { LuMail } from "react-icons/lu";
+import { SiInstagram } from "react-icons/si";
+import ModalComponent from "./ModalComponent";
 
 const CONTACTINFO = [
   {
@@ -45,6 +49,33 @@ const CONTACTINFO = [
 ];
 
 const page = () => {
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [showErrorModal, setShowErrorModal] = useState(false);
+  const [modalMessage, setModalMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    emailjs
+      .sendForm("service_sn4s2zf", "template_o2587mg", e.target, {
+        publicKey: "uRimAcaDKVDsWLW5j",
+      })
+      .then((response) => {
+        console.log("Email sent successfully:", response);
+        setModalMessage("Registration Successful!");
+        setShowSuccessModal(true);
+        setIsSubmitting(false);
+      })
+      .catch((error) => {
+        console.log("Error sending email:", error);
+        setModalMessage("Registration Failed! Please try again later.");
+        setShowErrorModal(true);
+        setIsSubmitting(false);
+      });
+  };
+
   return (
     <>
       <div className="min-h-dvh">
@@ -59,25 +90,41 @@ const page = () => {
               </div>
 
               <div className="grid gap-10 sm:grid-cols-12">
-                <div className="space-y-4 sm:col-span-8">
+                <form className="space-y-4 sm:col-span-8" onSubmit={sendEmail}>
                   <div className="grid gap-3 sm:grid-cols-2">
                     <div className="space-y-1">
-                      <Label>Name</Label>
-                      <Input />
+                      <Label>First Name</Label>
+                      <Input required type="text" id="name" name="first_name" />
                     </div>
                     <div className="space-y-1">
-                      <Label>Telephone/WhatsApp</Label>
-                      <Input />
+                      <Label>Last Name</Label>
+                      <Input required type="text" id="name" name="last_name" />
                     </div>
                   </div>
                   <div className="space-y-1">
+                    <Label>Telephone/WhatsApp</Label>
+                    <Input
+                      required
+                      type="text"
+                      id="name"
+                      name="contact_number"
+                    />
+                  </div>
+                  <div className="space-y-1">
                     <Label>Message</Label>
-                    <Textarea className="min-h-[140px]" />
+                    <Textarea
+                      required
+                      id="message"
+                      name="message"
+                      className="min-h-[140px]"
+                    />
                   </div>
                   <div className="pt-2">
-                    <Button>Submit</Button>
+                    <Button disabled={isSubmitting}>
+                      {isSubmitting ? "Submitting..." : "Submit"}
+                    </Button>
                   </div>
-                </div>
+                </form>
                 {CONTACTINFO.map((contactItem, idx) => (
                   <div className="space-y-7 sm:col-span-4" key={idx}>
                     <div className="flex flex-col gap-1">
@@ -148,6 +195,18 @@ const page = () => {
           </div>
         </div>
       </div>
+
+      <ModalComponent
+        showModal={showSuccessModal}
+        setShowModal={setShowSuccessModal}
+        message={modalMessage}
+      />
+
+      <ModalComponent
+        showModal={showErrorModal}
+        setShowModal={setShowErrorModal}
+        message={modalMessage}
+      />
     </>
   );
 };
