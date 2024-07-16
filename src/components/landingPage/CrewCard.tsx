@@ -49,12 +49,22 @@ const CrewCard = ({
               </Link>
             )}
             {facebook && (
-              <Link href={facebook} target="_blank" rel="noreferrer">
+              <Link
+                href={facebook}
+                target="_blank"
+                rel="noreferrer"
+                className="scale-[1.03] transition-all duration-300 ease-in-out hover:text-blue-600 active:scale-100"
+              >
                 <FiFacebook className="size-5" />
               </Link>
             )}
             {instagram && (
-              <Link href={instagram} target="_blank" rel="noreferrer">
+              <Link
+                href={instagram}
+                target="_blank"
+                rel="noreferrer"
+                className="scale-[1.03] transition-all duration-300 ease-in-out hover:text-red-600 active:scale-100"
+              >
                 <SiInstagram className="size-5" />
               </Link>
             )}
