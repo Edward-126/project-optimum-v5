@@ -35,7 +35,7 @@ const About = () => {
                 <p>Years of service</p>
               </div>
               <div className="text-center">
-                <h2>3+</h2>
+                <h2>4+</h2>
                 <p>Instructors</p>
               </div>
             </div>

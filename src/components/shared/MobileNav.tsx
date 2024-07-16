@@ -13,6 +13,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { NAVITEMS } from "./NavItems";
 import { useState } from "react";
+import { ModeToggle } from "./ThemeToggle";
 // import { ModeToggle } from "./ThemeToggle";
 
 const MobileNav = () => {
@@ -58,7 +59,7 @@ const MobileNav = () => {
                     </div>
                   ))}
                 </div>
-                {/* <ModeToggle /> */}
+                <ModeToggle />
               </div>
             </SheetHeader>
           </SheetContent>

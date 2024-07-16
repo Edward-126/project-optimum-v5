@@ -24,7 +24,7 @@ const FAQ = [
   {
     question: "Do you have any age restrictions for membership?",
     answer:
-      "Members must be at least 16 years old to join the gym. Minors under 18 may require parental consent and supervision for certain activities.",
+      "There are no age restrictions for membership. Members of all ages can participate.",
   },
   {
     question: "Do you offer nutritional guidance or dietary counseling?",

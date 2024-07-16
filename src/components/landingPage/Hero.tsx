@@ -1,3 +1,4 @@
+import Link from "next/link";
 import TempBlock from "../shared/TempBlock";
 import { Button } from "../ui/button";
 import About from "./About";
@@ -27,8 +28,12 @@ const Hero = () => {
                 community.
               </p>
               <div className="mt-2 flex items-center justify-center gap-6 sm:justify-start">
-                <Button>Explore Now</Button>
-                <Button variant="secondary">Explore Now</Button>
+                <Link href="#about">
+                  <Button>Explore Now</Button>
+                </Link>
+                <Link href="/contact">
+                  <Button variant="secondary">Contact Us</Button>
+                </Link>
               </div>
             </div>
             <div className="flex h-full items-center justify-center sm:col-span-5">
