@@ -59,7 +59,7 @@ const Footer = () => {
               </Link>
             </div>
 
-            <div className="col-span-12 flex flex-col gap-y-2.5 sm:col-span-3 sm:gap-y-4">
+            <div className="col-span-6 flex flex-col gap-y-2.5 sm:col-span-3 sm:gap-y-4">
               <small className="mb-2.5 font-semibold">Sections</small>
               {footerItem.sections.map((section, idx) => (
                 <Link
@@ -75,7 +75,7 @@ const Footer = () => {
               ))}
             </div>
 
-            <div className="col-span-12 flex flex-col gap-y-2.5 sm:col-span-3 sm:gap-y-4">
+            <div className="col-span-6 flex flex-col gap-y-2.5 sm:col-span-3 sm:gap-y-4">
               <small className="mb-2.5 font-semibold">Socials</small>
               {footerItem.socials.map((socials, idx) => (
                 <Link
