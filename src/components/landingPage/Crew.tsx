@@ -34,7 +34,7 @@ const CREW = [
     title: "Aerobics Instructor",
     imgSrc: "/assets/crew/Sujani Miss.png",
     whatsapp: "94766890201",
-    facebook: "",
+    facebook: "https://www.facebook.com/yoshika.jayakody?mibextid=ZbWKwL",
     instagram: "https://www.instagram.com/suja_19_?igsh=MWI1YjV6c2JvajJsbQ==",
   },
   {
