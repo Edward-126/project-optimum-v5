@@ -36,7 +36,7 @@ const FOOTERITEMS = [
       { lable: "Feedback", src: "/feedback", icon: ExternalLink },
     ],
     developer: [
-      { lable: "Thilina Rathnayaka", src: "https://its-thilina.vercel.app/" },
+      { lable: "Thilina R.", src: "https://its-thilina.vercel.app/" },
     ],
   },
 ];
