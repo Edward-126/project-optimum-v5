@@ -41,7 +41,7 @@ const CONTACTINFO = [
       },
       {
         display: "Instagram",
-        linkSrc: "https://www.instagram.com/optimum_gym.lk",
+        linkSrc: "https://www.instagram.com/optimumgym.lk",
         icon: SiInstagram,
       },
     ],
