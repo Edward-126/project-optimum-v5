@@ -7,15 +7,37 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import { baseUrl } from "./sitemap";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(`${baseUrl}`),
   title: {
     default: "Optimum Gym",
     template: "%s | Optimum Gym",
   },
   description: "Official website of the 'Optimum' Gym - (V5 with NEXTJS)",
+  openGraph: {
+    title: "Optimum Gym",
+    description: "Official website of the 'Optimum' Gym - (V5 with NEXTJS)",
+    url: `${baseUrl}`,
+    siteName: "Optimum Gym",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        secureUrl: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Preview image for Optimum Gym",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
   robots: {
     index: true,
     follow: true,
