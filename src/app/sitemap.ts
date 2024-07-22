@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-export const baseUrl = "https://project-optimum-v5.vercel.app";
+export const baseUrl = "https://www.optimumgym.lk";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
