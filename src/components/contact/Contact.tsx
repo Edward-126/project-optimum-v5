@@ -182,14 +182,23 @@ const Contact = () => {
                 </h2>
                 <p>Here's how to find your way to us.</p>
               </div>
-              <div className="overflow-hidden rounded-lg border border-border bg-[#E5E3E0]">
-                <iframe
-                  className="aspect-video h-[300px] w-full"
-                  title="Google Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.732666690411!2d79.91003937427182!3d6.9225271930771415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259ddc63081f7%3A0x253b6738ce307369!2sOptimum%20Power%20%26%20Fitness%20Gym!5e0!3m2!1sen!2slk!4v1700899473448!5m2!1sen!2slk"
-                  // loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
+              <div className="grid grid-cols-12 gap-10">
+                <div className="col-span-8 overflow-hidden rounded-lg border border-border bg-[#E5E3E0]">
+                  <iframe
+                    className="aspect-video h-[300px] w-full"
+                    title="Google Map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.732666690411!2d79.91003937427182!3d6.9225271930771415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259ddc63081f7%3A0x253b6738ce307369!2sOptimum%20Power%20%26%20Fitness%20Gym!5e0!3m2!1sen!2slk!4v1700899473448!5m2!1sen!2slk"
+                    // loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <div className="col-span-4 flex flex-col gap-0">
+                  <h4>The Address</h4>
+                  <div className="">
+                    <p className="mt-1">Optimum Power & Fitness Gym.</p>
+                    <p>21/A, Welikada rd,</p> <p>IDH,</p> <p>Colombo.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
