@@ -12,6 +12,7 @@ import { FiFacebook, FiPhone } from "react-icons/fi";
 import { LuMail } from "react-icons/lu";
 import { SiInstagram } from "react-icons/si";
 import ModalComponent from "./ModalComponent";
+import { Icons } from "../shared/Icons";
 
 const CONTACTINFO = [
   {
@@ -43,6 +44,11 @@ const CONTACTINFO = [
         display: "Instagram",
         linkSrc: "https://www.instagram.com/optimumgym.lk",
         icon: SiInstagram,
+      },
+      {
+        display: "TikTok",
+        linkSrc: "https://www.tiktok.com/@optimumgym.lk",
+        icon: Icons.Tiktok,
       },
     ],
   },
@@ -157,7 +163,7 @@ const Contact = () => {
                           key={idx}
                         >
                           {
-                            <social.icon className="size-[19px] transition-all duration-300 ease-in-out group-hover:scale-[1.03] group-hover:text-primary" />
+                            <social.icon className="size-[19px] fill-black transition-all duration-300 ease-in-out group-hover:scale-[1.03] group-hover:fill-primary dark:fill-white" />
                           }
                           <Link
                             className="transition-all duration-300 ease-in-out group-hover:font-medium group-hover:text-primary"
